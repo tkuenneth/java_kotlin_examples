@@ -1,4 +1,4 @@
-package campusdemo.kotlin
+package javakotlinexamples.kotlin
 
 class Greeter(val name: String) {
     fun greet() {

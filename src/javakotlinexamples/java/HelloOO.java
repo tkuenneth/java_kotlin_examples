@@ -1,4 +1,4 @@
-package campusdemo.java;
+package javakotlinexamples.java;
 
 public class HelloOO {
 
