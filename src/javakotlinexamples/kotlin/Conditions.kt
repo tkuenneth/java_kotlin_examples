@@ -9,6 +9,12 @@ fun main(args: Array<String>) {
         2 -> println("2")
         else -> println("1 oder 3")
     }
+
+    val person = object {
+        val name = null
+    }
+    val s = person.name ?: "???"
+    println(s)
 }
 
 fun isEven(num: Int): Boolean {

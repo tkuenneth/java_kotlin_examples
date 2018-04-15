@@ -18,9 +18,25 @@ public class Conditions {
             default:
                 System.out.println("1 oder 3");
         }
+
+        Person person = new Person();
+        String s = person.name != null ? person.name : "???";
+        System.out.println(s);
     }
 
     public static boolean isEven(int num) {
         return (num % 2) != 1;
+    }
+
+    static class Person {
+        String name;
+
+        Person() {
+            this(null);
+        }
+
+        Person(String name) {
+            this.name = name;
+        }
     }
 }
