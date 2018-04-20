@@ -15,5 +15,10 @@ public class LoopDemo {
         for (var s : array) {
             System.out.println(s);
         }
+
+        int i = 0;
+        while (i++ < 3) {
+            System.out.println(i);
+        }
     }
 }

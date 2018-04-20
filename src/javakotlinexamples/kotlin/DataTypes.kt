@@ -1,5 +1,7 @@
 package javakotlinexamples.kotlin
 
+const val II = 42
+
 fun main(args: Array<String>) {
 
     val a: Float = 123.45f
@@ -9,6 +11,7 @@ fun main(args: Array<String>) {
     val e: Short = 3
     val f: Byte = 4
     val g: String = "Hallo"
+    val h: Boolean = true
 
     print(a)
     print(b)
@@ -17,6 +20,7 @@ fun main(args: Array<String>) {
     print(e)
     print(f)
     print(g)
+    print(h)
 }
 
 fun print(num: Any) {

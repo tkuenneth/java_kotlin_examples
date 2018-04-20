@@ -20,11 +20,12 @@ public class Conditions {
         }
 
         Person person = new Person();
+        // the conditional operator
         String s = person.name != null ? person.name : "???";
         System.out.println(s);
     }
 
-    public static boolean isEven(int num) {
+    private static boolean isEven(int num) {
         return (num % 2) != 1;
     }
 
