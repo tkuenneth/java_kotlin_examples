@@ -11,7 +11,7 @@ public class LoopDemo {
             System.out.println(i);
         }
 
-        var array = new String [] {"Eins", "Zwei", "Drie"};
+        var array = new String [] {"Eins", "Zwei", "Drei"};
         for (var s : array) {
             System.out.println(s);
         }

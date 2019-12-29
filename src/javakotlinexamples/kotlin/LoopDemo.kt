@@ -12,7 +12,7 @@ fun main(args: Array<String>) {
         println(i)
     }
 
-    val array = arrayOf("Eins", "Zwei", "Drie")
+    val array = arrayOf("Eins", "Zwei", "Drei")
     for (i in array.indices) {
         println(array[i])
     }
