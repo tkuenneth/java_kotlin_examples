@@ -16,4 +16,9 @@ fun main(args: Array<String>) {
     for (i in array.indices) {
         println(array[i])
     }
+
+    val list = listOf("Eins", "Zwei", "Drei")
+    for (i in list) {
+        println(i)
+    }
 }
