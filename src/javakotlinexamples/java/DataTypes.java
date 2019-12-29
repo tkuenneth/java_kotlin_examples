@@ -10,16 +10,16 @@ public class DataTypes {
         short e = 3;
         byte f = 4;
         var g = true;
-        print(a);
-        print(b);
-        print(c);
-        print(d);
-        print(e);
-        print(f);
-        print(g);
+        printClassName(a);
+        printClassName(b);
+        printClassName(c);
+        printClassName(d);
+        printClassName(e);
+        printClassName(f);
+        printClassName(g);
     }
 
-    private static void print(Object n) {
+    private static void printClassName(Object n) {
         System.out.println(n.getClass().getName());
     }
 }

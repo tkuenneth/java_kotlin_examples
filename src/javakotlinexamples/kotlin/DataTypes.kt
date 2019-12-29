@@ -10,15 +10,15 @@ fun main(args: Array<String>) {
     val f = 4.toByte()
     val g = true
 
-    print(a)
-    print(b)
-    print(c)
-    print(d)
-    print(e)
-    print(f)
-    print(g)
+    printClassName(a)
+    printClassName(b)
+    printClassName(c)
+    printClassName(d)
+    printClassName(e)
+    printClassName(f)
+    printClassName(g)
 }
 
-fun print(num: Any) {
+fun printClassName(num: Any) {
     println(num::class.qualifiedName)
 }
