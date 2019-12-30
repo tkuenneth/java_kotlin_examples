@@ -1,9 +1,6 @@
 package javakotlinexamples.kotlin
 
 fun main(args: Array<String>) {
-
-    // for loop iterates through anything that provides an iterator.
-
     for (i in 1..3) {
         println(i)
     }
@@ -19,6 +16,13 @@ fun main(args: Array<String>) {
 
     val list = listOf("Eins", "Zwei", "Drei")
     for (i in list) {
+        println(i)
+    }
+
+    list.forEach { println(it) }
+
+    var i = 0
+    while (i++ < 3) {
         println(i)
     }
 }

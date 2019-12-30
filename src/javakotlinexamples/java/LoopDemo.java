@@ -1,5 +1,7 @@
 package javakotlinexamples.java;
 
+import java.util.Arrays;
+
 public class LoopDemo {
 
     public static void main(String[] args) {
@@ -11,10 +13,13 @@ public class LoopDemo {
             System.out.println(i);
         }
 
-        var array = new String [] {"Eins", "Zwei", "Drei"};
+        var array = new String[]{"Eins", "Zwei", "Drei"};
         for (var s : array) {
             System.out.println(s);
         }
+
+        var list = Arrays.asList("Eins", "Zwei", "Drei");
+        list.forEach(s -> System.out.println(s));
 
         int i = 0;
         while (i++ < 3) {
