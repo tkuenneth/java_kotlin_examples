@@ -1,15 +1,15 @@
 package javakotlinexamples.kotlin
 
 fun main(args: Array<String>) {
-
-    // Null can not be a value of a non-null type String
-    val stringThatCannotBeNull: String = "Campus"
-    println(stringThatCannotBeNull.length)
+    var s1 = "Hello"
+    println(s1.length)
 
     val stringThatCanBeNull: String? = null
-    // Only safe (?.) or non-null asserted (!!) calls are allowed
-    // on a nullable receiver of type String
-    println(stringThatCanBeNull?.length ?: -1)
+    try {
+        println(stringThatCanBeNull!!.length)
+    } catch (e: NullPointerException) {
+        println("Crash")
+    }
 
-    // println(stringThatCanBeNull!!.length)
+    println(stringThatCanBeNull?.length ?: -1)
 }

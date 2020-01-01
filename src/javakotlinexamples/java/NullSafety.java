@@ -5,13 +5,18 @@ import java.util.Objects;
 public class NullSafety {
 
     public static void main(String[] args) {
-        String s1 = "Campus";
+        String s1 = "Hello";
         System.out.println(s1.length());
 
         String stringThatCanBeNull = null;
-        // causes java.lang.NullPointerException
-        //System.out.println(stringThatCanBeNull.length());
+        try {
+            // causes java.lang.NullPointerException
+            System.out.println(stringThatCanBeNull.length());
+        } catch (NullPointerException e) {
+            System.out.println("Crash");
+        }
 
+        // Ternary Operator In Java
         var l1 = stringThatCanBeNull != null
                 ? stringThatCanBeNull.length()
                 : -1;
