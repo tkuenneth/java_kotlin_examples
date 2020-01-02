@@ -5,14 +5,14 @@ fun main(args: Array<String>) {
     B()
 }
 
-open class A constructor() {
+open class A {
 
     init {
         println("A")
     }
 }
 
-class B constructor() : A() {
+class B : A() {
 
     init {
         println("B")
