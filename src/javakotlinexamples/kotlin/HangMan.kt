@@ -24,7 +24,7 @@ fun main(args: Array<String>) {
             if (eingabe.length == 1) {
                 var treffer = 0
                 var gleich = 0
-                for (pos in 0..wort.length - 1) {
+                for (pos in wort.indices) {
                     if (wort[pos].toLowerCase() == eingabe[0].toLowerCase()) {
                         treffer += 1
                         anzeige[pos] = wort[pos]
